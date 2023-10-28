@@ -157,25 +157,28 @@ export default async function handler(req: NextRequest) {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
+                marginBottom: 15,
               }}
               className="social-org-container"
             >
-              <svg
-                viewBox="0 0 24 24"
-                width="30"
-                height="30"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                style={{
-                  marginLeft: 5,
-                  marginRight: 5,
-                }}
-              >
-                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-              </svg>
+              {org.twitter && (
+                <svg
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style={{
+                    marginLeft: 5,
+                    marginRight: 5,
+                  }}
+                >
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              )}
 
               <svg
                 viewBox="0 0 24 24"
@@ -200,7 +203,7 @@ export default async function handler(req: NextRequest) {
                   marginLeft: 10,
                   marginRight: 10,
                   height: "100%",
-                  backgroundColor: "black",
+                  backgroundColor: "slategray",
                 }}
               ></span>
 
@@ -221,6 +224,7 @@ export default async function handler(req: NextRequest) {
                 fontSize: 38,
                 textAlign: "right",
                 fontWeight: 700,
+                maxWidth: 700,
               }}
               className="org-text"
             >

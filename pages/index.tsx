@@ -23,6 +23,7 @@ export default function Index() {
       title: event.target.title.value,
       description: event.target.description.value,
       app: event.target.app.value,
+      org: event.target.org.value,
     };
 
     // Send the form data to our API.
@@ -32,7 +33,7 @@ export default function Index() {
           title: data.title,
           description: data.description,
           app: data.app,
-          org: `fairdataihub`,
+          org: data.org,
         })
     );
 
@@ -96,7 +97,7 @@ export default function Index() {
 
             <div className="mb-3 flex w-[400px] flex-col">
               <label htmlFor="app" className="mb-1">
-                App
+                Application
               </label>
 
               <select
@@ -110,6 +111,25 @@ export default function Index() {
                 <option value="soda-for-sparc">SODA for SPARC</option>
 
                 <option value="fairshare">FAIRshare</option>
+              </select>
+            </div>
+
+            <div className="mb-3 flex w-[400px] flex-col">
+              <label htmlFor="org" className="mb-1">
+                Organization
+              </label>
+
+              <select
+                name="org"
+                id="org"
+                required
+                defaultValue={`fairdataihub`}
+              >
+                <option value="fairdataihub">Default</option>
+
+                <option value="ai-readi">AI-READI</option>
+
+                <option value="fair-biors">FAIR-BioRS</option>
               </select>
             </div>
 
