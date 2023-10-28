@@ -51,10 +51,17 @@ export default async function handler(req: NextRequest) {
     };
   } else if (queryOrg === "ai-readi") {
     org = {
-      name: "AI-READI",
+      name: "Artificial Intelligence Ready and Equitable Atlas for Diabetes Insights",
       github: true,
       twitter: false,
       social: "@ai-readi",
+    };
+  } else if (queryOrg === "fair-biors") {
+    org = {
+      name: "FAIR Biomedical Research Software",
+      github: true,
+      twitter: false,
+      social: "@fair-biors",
     };
   } else {
     throw new Error("Invalid org");
