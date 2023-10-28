@@ -6,6 +6,18 @@ export const config = {
 };
 
 export default async function handler(req: NextRequest) {
+  const mediumInter = await fetch(
+    new URL("../../assets/Inter-Medium.otf", import.meta.url)
+  ).then((res) => res.arrayBuffer());
+
+  const semiBoldInter = await fetch(
+    new URL("../../assets/Inter-SemiBold.otf", import.meta.url)
+  ).then((res) => res.arrayBuffer());
+
+  const boldInter = await fetch(
+    new URL("../../assets/Inter-Bold.otf", import.meta.url)
+  ).then((res) => res.arrayBuffer());
+
   const { searchParams } = req.nextUrl;
 
   const title = searchParams.get("title") || "";
@@ -59,6 +71,7 @@ export default async function handler(req: NextRequest) {
           flexDirection: "column",
           justifyContent: "space-between",
           background: "white",
+          fontFamily: '"Inter"',
           backgroundImage:
             "radial-gradient(circle at 25px 25px, lightgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, lightgray 2%, transparent 0%)",
           backgroundSize: "100px 100px",
@@ -80,7 +93,7 @@ export default async function handler(req: NextRequest) {
           <span
             style={{
               fontSize: 48,
-              fontWeight: 800,
+              fontWeight: 700,
               textAlign: "left",
             }}
             className="title-text"
@@ -188,6 +201,7 @@ export default async function handler(req: NextRequest) {
                 style={{
                   fontSize: 33,
                   textAlign: "right",
+                  fontWeight: 500,
                 }}
                 className="social-text"
               >
@@ -199,6 +213,7 @@ export default async function handler(req: NextRequest) {
               style={{
                 fontSize: 38,
                 textAlign: "right",
+                fontWeight: 700,
               }}
               className="org-text"
             >
@@ -211,6 +226,26 @@ export default async function handler(req: NextRequest) {
     {
       width: 1200,
       height: 630,
+      fonts: [
+        {
+          name: "Inter",
+          data: mediumInter,
+          style: "normal",
+          weight: 500,
+        },
+        {
+          name: "Inter",
+          data: semiBoldInter,
+          style: "normal",
+          weight: 600,
+        },
+        {
+          name: "Inter",
+          data: boldInter,
+          style: "normal",
+          weight: 700,
+        },
+      ],
     }
   );
 }
