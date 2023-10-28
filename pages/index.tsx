@@ -3,11 +3,11 @@ import React from "react";
 
 export default function Index() {
   const [imageSource, setImageSource] = React.useState(
-    `https://og.fairdataihub.org/api/ogimage?title=FAIR%20Data%20Innovations%20Hub&description=Making%20FAIR%20data%20practices%20more%20accessible`
+    `https://kalai.fairdataihub.org/api/generate?title=FAIR%20Data%20Innovations%20Hub&description=Making%20FAIR%20data%20practices%20more%20accessible`
   );
   const [showSpinner, setShowSpinner] = React.useState(false);
   const [imageURL, setImageURL] = React.useState(
-    `https://og.fairdataihub.org/api/ogimage?title=FAIR%20Data%20Innovations%20Hub&description=Making%20FAIR%20data%20practices%20more%20accessible`
+    `https://kalai.fairdataihub.org/api/generate?title=FAIR%20Data%20Innovations%20Hub&description=Making%20FAIR%20data%20practices%20more%20accessible`
   );
 
   const copyToClipboard = () => {
@@ -57,15 +57,7 @@ export default function Index() {
         />
         <meta
           name="og:image"
-          content={
-            // Because OG images must have a absolute URL, we use the
-            // `VERCEL_URL` environment variable to get the deployment’s URL.
-            // More info:
-            // https://vercel.com/docs/concepts/projects/environment-variables
-            `${
-              process.env.VERCEL_URL ? "https://" + process.env.VERCEL_URL : ""
-            }/api/vercel`
-          }
+          content="https://kalai.fairdataihub.org/api/generate?title=FAIR%20Data%20Innovations%20Hub&description=Making%20FAIR%20data%20practices%20more%20accessible"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
