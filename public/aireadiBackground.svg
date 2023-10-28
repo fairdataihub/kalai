@@ -1,31 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1200" height="660" preserveAspectRatio="none" viewBox="0 0 1200 660">
-    <g mask="url(&quot;#SvgjsMask1327&quot;)" fill="none">
-        <rect width="1200" height="660" x="0" y="0" fill="rgba(255, 255, 255, 1)"></rect>
-        <circle r="55" cx="538.78" cy="251.11" fill="rgba(2, 132, 199, 1)"></circle>
-        <path d="M293.39 358.09000000000003 L355.65999999999997 216.26L240.4528333265684 203.10283332656843z" stroke="rgba(51, 65, 85, 1)" stroke-width="1.56"></path>
-        <path d="M1124.95 336.95L1113.91 343.43 1105.16 334.08 1094.11 340.57 1085.36 331.21 1074.32 337.7 1065.57 328.35" stroke="rgba(51, 65, 85, 1)" stroke-width="2.4" stroke-dasharray="2, 2"></path>
-        <path d="M304.24 189.89 L188.45 69.86L305.9681176628517 70.25188233714834z" fill="rgba(51, 65, 85, 1)"></path>
-        <path d="M1193.74 388.45L1206.11 385.14 1212.06 396.48 1224.43 393.17 1230.38 404.51 1242.75 401.2 1248.69 412.54M1190.53 395.77L1202.9 392.46 1208.85 403.81 1221.22 400.5 1227.16 411.84 1239.53 408.53 1245.48 419.87M1187.32 403.1L1199.69 399.79 1205.63 411.13 1218 407.82 1223.95 419.16 1236.32 415.85 1242.27 427.2" stroke="rgba(2, 132, 199, 1)" stroke-width="1" stroke-dasharray="4, 4"></path>
-        <rect width="396" height="396" clip-path="url(&quot;#SvgjsClipPath1328&quot;)" x="232.07" y="387.62" fill="url(&quot;#SvgjsPattern1329&quot;)" transform="rotate(31.17, 430.07, 585.62)"></rect>
-        <path d="M1179.21 524.84L1172.72 535.88 1160.53 531.98 1154.04 543.02 1141.84 539.12 1135.36 550.16 1123.16 546.26M1176.35 517.37L1169.87 528.41 1157.67 524.51 1151.18 535.55 1138.99 531.64 1132.5 542.69 1120.31 538.78" stroke="rgba(2, 132, 199, 1)" stroke-width="1"></path>
-        <path d="M360.59 359.6a5.6 5.6 0 1 0-4.71-10.15 5.6 5.6 0 1 0 4.71 10.15zM353.86 345.09a5.6 5.6 0 1 0-4.72-10.16 5.6 5.6 0 1 0 4.72 10.16zM347.12 330.58a5.6 5.6 0 1 0-4.71-10.16 5.6 5.6 0 1 0 4.71 10.16zM340.39 316.06a5.6 5.6 0 1 0-4.71-10.16 5.6 5.6 0 1 0 4.71 10.16zM388.57 381.9a5.6 5.6 0 1 0-4.71-10.16 5.6 5.6 0 1 0 4.71 10.16zM381.84 367.38a5.6 5.6 0 1 0-4.71-10.15 5.6 5.6 0 1 0 4.71 10.15zM375.11 352.87a5.6 5.6 0 1 0-4.72-10.16 5.6 5.6 0 1 0 4.72 10.16zM368.37 338.36a5.6 5.6 0 1 0-4.71-10.16 5.6 5.6 0 1 0 4.71 10.16z" fill="rgba(241, 245, 249, 1)"></path>
-        <rect width="395.28000000000003" height="395.28000000000003" clip-path="url(&quot;#SvgjsClipPath1330&quot;)" x="317.19" y="135.66" fill="url(&quot;#SvgjsPattern1331&quot;)" transform="rotate(168.16, 514.83, 333.3)"></rect>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
+    <g mask="url(&quot;#SvgjsMask1010&quot;)" fill="none">
+        <rect width="1440" height="560" x="0" y="0" fill="rgba(255, 255, 255, 1)"></rect>
+        <path d="M41.57 160.57L88.3 160.57L88.3 207.3L41.57 207.3z" fill="rgba(92, 147, 221, 1)"></path>
+        <path d="M698.32 513.64L740 513.64L740 555.32L698.32 555.32z" fill="rgba(104, 155, 223, 1)"></path>
+        <path d="M963.18 60.82 a55.38 55.38 0 1 0 110.76 0 a55.38 55.38 0 1 0 -110.76 0z" stroke="rgba(143, 173, 213, 1)"></path>
+        <path d="M675.27 215.18L696.64 215.18L696.64 236.55L675.27 236.55z" fill="rgba(92, 147, 221, 1)"></path>
+        <path d="M1404.65 588.9a50.52 50.52 0 1 0-56.47-83.79z" stroke="rgba(143, 173, 213, 1)"></path>
+        <path d="M282.01 11.27 a22.07 22.07 0 1 0 44.14 0 a22.07 22.07 0 1 0 -44.14 0z" fill="rgba(92, 147, 221, 1)"></path>
+        <path d="M240.3 469.55L244.5 469.55L244.5 508.53L240.3 508.53z" stroke="rgba(92, 147, 221, 1)"></path>
+        <path d="M1261.98 425.93a19.87 19.87 0 1 0 13.51 37.38z" stroke="rgba(92, 147, 221, 1)"></path>
+        <path d="M475 247.71 a29.76 29.76 0 1 0 59.52 0 a29.76 29.76 0 1 0 -59.52 0z" fill="rgba(92, 147, 221, 1)"></path>
+        <path d="M453.9 378.99L502.91 378.99L502.91 395.42L453.9 395.42z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M1292.12 293.04L1342.45 293.04L1342.45 307.99L1292.12 307.99z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M1294.42 183.01a4.12 4.12 0 1 0-7.87 2.45z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M89.26 84.4L128.41 84.4L128.41 123.55L89.26 123.55z" fill="rgba(104, 155, 223, 1)"></path>
+        <path d="M743.59 184.36a31.38 31.38 0 1 0-0.36-62.76z" fill="rgba(143, 173, 213, 1)"></path>
+        <path d="M93.09 34.08a10.06 10.06 0 1 0 5.39-19.38z" fill="rgba(92, 147, 221, 1)"></path>
+        <path d="M335.26 540.65L353.41 540.65L353.41 596.21L335.26 596.21z" fill="rgba(143, 173, 213, 1)"></path>
+        <path d="M660.65 72.7 a39.7 39.7 0 1 0 79.4 0 a39.7 39.7 0 1 0 -79.4 0z" fill="rgba(143, 173, 213, 1)"></path>
+        <path d="M580.58 445.09L608.43 445.09L608.43 472.94L580.58 472.94z" stroke="rgba(143, 173, 213, 1)"></path>
+        <path d="M311 548.19L336.47 548.19L336.47 580.93L311 580.93z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M65.26 300.44a34.1 34.1 0 1 0 27.58-62.37z" fill="rgba(92, 147, 221, 1)"></path>
+        <path d="M628.51 382.41L680.19 382.41L680.19 437.52L628.51 437.52z" fill="rgba(143, 173, 213, 1)"></path>
+        <path d="M171.38 228.57a2.61 2.61 0 1 0 3.81-3.57z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M508.39 320.16L550.9 320.16L550.9 335.71L508.39 335.71z" stroke="rgba(143, 173, 213, 1)"></path>
+        <path d="M367.75 485.16 a21.02 21.02 0 1 0 42.04 0 a21.02 21.02 0 1 0 -42.04 0z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M1051.78 480.9 a15.03 15.03 0 1 0 30.06 0 a15.03 15.03 0 1 0 -30.06 0z" fill="rgba(143, 173, 213, 1)"></path>
+        <path d="M380.53 310.97L418.51 310.97L418.51 348.95L380.53 348.95z" fill="rgba(143, 173, 213, 1)"></path>
+        <path d="M1410.46 298.72 a14.25 14.25 0 1 0 28.5 0 a14.25 14.25 0 1 0 -28.5 0z" stroke="rgba(143, 173, 213, 1)"></path>
+        <path d="M282.45 177.59L333.37 177.59L333.37 202.53L282.45 202.53z" fill="rgba(92, 147, 221, 1)"></path>
+        <path d="M618.63 252.65a9.82 9.82 0 1 0-18.96-5.13z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M1254.44 404.81 a45.79 45.79 0 1 0 91.58 0 a45.79 45.79 0 1 0 -91.58 0z" fill="rgba(104, 155, 223, 1)"></path>
+        <path d="M1141.25 79.55 a38.8 38.8 0 1 0 77.6 0 a38.8 38.8 0 1 0 -77.6 0z" fill="rgba(104, 155, 223, 1)"></path>
+        <path d="M1377.06 33.51L1387.07 33.51L1387.07 43.52L1377.06 43.52z" stroke="rgba(104, 155, 223, 1)"></path>
+        <path d="M987.82 303.22a27.84 27.84 0 1 0-2.48 55.62z" fill="rgba(92, 147, 221, 1)"></path>
     </g>
     <defs>
-        <mask id="SvgjsMask1327">
-            <rect width="1200" height="660" fill="#ffffff"></rect>
+        <mask id="SvgjsMask1010">
+            <rect width="1440" height="560" fill="#ffffff"></rect>
         </mask>
-        <pattern x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse" id="SvgjsPattern1329">
-            <path d="M0 6L3 0L6 6" stroke="rgba(2, 132, 199, 1)" fill="none"></path>
-        </pattern>
-        <clipPath id="SvgjsClipPath1328">
-            <circle r="99" cx="430.07" cy="585.62"></circle>
-        </clipPath>
-        <pattern x="0" y="0" width="10.98" height="10.98" patternUnits="userSpaceOnUse" id="SvgjsPattern1331">
-            <path d="M0 10.98L5.49 0L10.98 10.98" stroke="rgba(2, 132, 199, 1)" fill="none"></path>
-        </pattern>
-        <clipPath id="SvgjsClipPath1330">
-            <circle r="98.82000000000001" cx="514.83" cy="333.3"></circle>
-        </clipPath>
     </defs>
 </svg>
