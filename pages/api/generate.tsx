@@ -26,45 +26,45 @@ export default async function handler(req: NextRequest) {
   const queryOrg = searchParams.get("org") || "fairdataihub";
 
   let appText = "FAIR Data Innovations Hub";
+  let backgroundImage =
+    "https://kalai.fairdataihub.org/fairdataihubBackground.svg";
 
-  if (app === "soda-for-sparc") {
-    appText = "SODA for SPARC";
-  } else if (app === "fairshare") {
-    appText = "FAIRshare";
-  } else if (app === `fairdataihub` || app === undefined || app === null) {
-    appText = "";
+  switch (app) {
+    case "fairshare":
+      appText = "FAIRshare";
+      backgroundImage =
+        "https://kalai.fairdataihub.org/fairshareBackground.svg";
+      break;
+    case "soda-for-sparc":
+      appText = "SODA for SPARC";
+      backgroundImage = "https://kalai.fairdataihub.org/sodaBackground.svg";
+      break;
   }
 
   let org = {
-    name: "",
-    github: false,
-    twitter: false,
-    social: "",
+    name: "FAIR Data Innovations Hub",
+    github: true,
+    twitter: true,
+    social: "@fairdataihub",
   };
 
-  if (queryOrg === "fairdataihub") {
-    org = {
-      name: "FAIR Data Innovations Hub",
-      github: true,
-      twitter: true,
-      social: "@fairdataihub",
-    };
-  } else if (queryOrg === "ai-readi") {
-    org = {
-      name: "Artificial Intelligence Ready and Equitable Atlas for Diabetes Insights",
-      github: true,
-      twitter: false,
-      social: "@ai-readi",
-    };
-  } else if (queryOrg === "fair-biors") {
-    org = {
-      name: "FAIR Biomedical Research Software",
-      github: true,
-      twitter: false,
-      social: "@fair-biors",
-    };
-  } else {
-    throw new Error("Invalid org");
+  switch (queryOrg) {
+    case "ai-readi":
+      org = {
+        name: "Artificial Intelligence Ready and Equitable Atlas for Diabetes Insights",
+        github: true,
+        twitter: false,
+        social: "@ai-readi",
+      };
+      break;
+    case "fair-biors":
+      org = {
+        name: "FAIR Biomedical Research Software",
+        github: true,
+        twitter: false,
+        social: "@fair-biors",
+      };
+      break;
   }
 
   return new ImageResponse(
@@ -79,12 +79,19 @@ export default async function handler(req: NextRequest) {
           justifyContent: "space-between",
           background: "white",
           fontFamily: '"Inter"',
-          backgroundImage:
-            "radial-gradient(circle at 25px 25px, lightgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, lightgray 2%, transparent 0%)",
-          backgroundSize: "100px 100px",
         }}
         className="frame"
       >
+        <img
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            filter: "blur(11px)",
+          }}
+          src="https://raw.githubusercontent.com/fairdataihub/og.fairdataihub.org/main/public/fairshareBackground.svg"
+        />
+
         <div
           style={{
             width: "100%",

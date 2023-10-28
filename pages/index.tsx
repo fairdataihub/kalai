@@ -106,7 +106,7 @@ export default function Index() {
                 required
                 defaultValue={`fairdataihub`}
               >
-                <option value="fairdataihub">Default</option>
+                <option value="fairdataihub">fairdataihub</option>
 
                 <option value="soda-for-sparc">SODA for SPARC</option>
 
@@ -125,7 +125,7 @@ export default function Index() {
                 required
                 defaultValue={`fairdataihub`}
               >
-                <option value="fairdataihub">Default</option>
+                <option value="fairdataihub">fairdataihub</option>
 
                 <option value="ai-readi">AI-READI</option>
 
