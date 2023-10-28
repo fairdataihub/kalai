@@ -39,6 +39,13 @@ export default async function handler(req: NextRequest) {
       appText = "SODA for SPARC";
       backgroundImage = "https://kalai.fairdataihub.org/sodaBackground.svg";
       break;
+    case "ai-readi":
+      appText = "";
+      backgroundImage = "https://kalai.fairdataihub.org/aireadiBackground.svg";
+      break;
+    default:
+      appText = "";
+      break;
   }
 
   let org = {
@@ -87,9 +94,12 @@ export default async function handler(req: NextRequest) {
             position: "absolute",
             width: "100%",
             height: "100%",
-            filter: "blur(11px)",
+            top: 0,
+            left: 0,
+            objectFit: "contain",
+            filter: "blur(11px) saturate(100%)",
           }}
-          src="https://raw.githubusercontent.com/fairdataihub/og.fairdataihub.org/main/public/fairshareBackground.svg"
+          src={backgroundImage}
         />
 
         <div

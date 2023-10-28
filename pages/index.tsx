@@ -111,6 +111,8 @@ export default function Index() {
                 <option value="soda-for-sparc">SODA for SPARC</option>
 
                 <option value="fairshare">FAIRshare</option>
+
+                <option value="ai-readi">AI-READI</option>
               </select>
             </div>
 
