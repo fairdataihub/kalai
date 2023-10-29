@@ -113,6 +113,8 @@ export default function Index() {
                 <option value="fairshare">FAIRshare</option>
 
                 <option value="ai-readi">AI-READI</option>
+
+                <option value="fair-biors">FAIR-BioRS</option>
               </select>
             </div>
 

@@ -28,6 +28,9 @@ export default async function handler(req: NextRequest) {
   let appText = "FAIR Data Innovations Hub";
   let backgroundImage =
     "https://kalai.fairdataihub.org/fairdataihubBackground.svg";
+  let imgBlur = "11px";
+
+  const devBackgroundImage = `http://localhost:3000/background.svg?timestamp=${Date.now()}`;
 
   switch (app) {
     case "fairshare":
@@ -41,7 +44,14 @@ export default async function handler(req: NextRequest) {
       break;
     case "ai-readi":
       appText = "";
+      imgBlur = "5px";
       backgroundImage = "https://kalai.fairdataihub.org/aireadiBackground.svg";
+      break;
+    case "fair-biors":
+      appText = "";
+      imgBlur = "5px";
+      backgroundImage =
+        "https://kalai.fairdataihub.org/fairbiorsBackground.svg";
       break;
     default:
       appText = "";
@@ -97,7 +107,7 @@ export default async function handler(req: NextRequest) {
             top: 0,
             left: 0,
             objectFit: "contain",
-            filter: "blur(11px) saturate(100%)",
+            filter: `blur(${imgBlur}) saturate(100%)`,
           }}
           src={backgroundImage}
         />
