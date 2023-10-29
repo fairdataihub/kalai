@@ -10,6 +10,8 @@ export default function Index() {
     `https://kalai.fairdataihub.org/api/generate?title=FAIR%20Data%20Innovations%20Hub&description=Making%20FAIR%20data%20practices%20more%20accessible`
   );
 
+  const [timer, setTimer] = React.useState("");
+
   const copyToClipboard = () => {
     navigator.clipboard.writeText(imageURL);
   };
@@ -26,6 +28,9 @@ export default function Index() {
       org: event.target.org.value,
     };
 
+    setTimer("");
+    const start = Date.now();
+
     // Send the form data to our API.
     const response = await fetch(
       `/api/generate/?` +
@@ -37,7 +42,10 @@ export default function Index() {
         })
     );
 
-    console.log(response);
+    const apiResponseEnd = Date.now();
+
+    setTimer(`Elapsed time: ${apiResponseEnd - start}ms`);
+
     setImageURL(response.url);
 
     // display the image
@@ -137,15 +145,16 @@ export default function Index() {
               </select>
             </div>
 
-            <div className="flex flex-row items-end space-x-8">
+            <div className="flex flex-row items-center space-x-2 mt-10">
               <button
                 type="submit"
-                className="mt-10 rounded border-b-4 border-blue-700 bg-blue-500 py-2 px-4 font-bold text-white transition-all hover:border-blue-500 hover:bg-blue-400"
+                className=" rounded border-b-4 border-blue-700 bg-blue-500 py-2 px-4 font-bold text-white transition-all hover:border-blue-500 hover:bg-blue-400 flex items-center justify-center space-x-3 transition-all"
               >
+                {showSpinner && <span className={`loader mx-2`}></span>}
                 Submit
               </button>
 
-              {showSpinner && <span className="loader"></span>}
+              {timer && <p className="text-sm text-gray-500">{timer}</p>}
             </div>
           </form>
         </div>
