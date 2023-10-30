@@ -42,6 +42,11 @@ export default async function handler(req: NextRequest) {
       appText = "SODA for SPARC";
       backgroundImage = "https://kalai.fairdataihub.org/sodaBackground.svg";
       break;
+    case "fairdataihub":
+      appText = "";
+      backgroundImage =
+        "https://kalai.fairdataihub.org/fairdataihubBackground.svg";
+      break;
     case "ai-readi":
       appText = "";
       imgBlur = "5px";
@@ -54,7 +59,8 @@ export default async function handler(req: NextRequest) {
         "https://kalai.fairdataihub.org/fairbiorsBackground.svg";
       break;
     default:
-      appText = "";
+      // Use what the user entered
+      appText = app;
       break;
   }
 
