@@ -5,11 +5,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Index() {
   const [imageSource, setImageSource] = React.useState(
-    `http://localhost:3000/api/generate?title=Hello!&description=Kalai%20is%20a%20thumbnail-generation%20service%20for%20fairdataihub&app=fairdataihub&org=fairdataihub`
+    `http://kalai.fairdataihub.org/api/generate?title=Hello!&description=Kalai%20is%20a%20thumbnail-generation%20service%20for%20fairdataihub&app=fairdataihub&org=fairdataihub`
   );
   const [showSpinner, setShowSpinner] = React.useState(false);
   const [imageURL, setImageURL] = React.useState(
-    `http://localhost:3000/api/generate?title=Hello!&description=Kalai%20is%20a%20thumbnail-generation%20service%20for%20fairdataihub&app=fairdataihub&org=fairdataihub`
+    `http://kalai.fairdataihub.org/api/generate?title=Hello!&description=Kalai%20is%20a%20thumbnail-generation%20service%20for%20fairdataihub&app=fairdataihub&org=fairdataihub`
   );
 
   const [timer, setTimer] = React.useState("");
