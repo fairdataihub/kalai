@@ -132,6 +132,7 @@ export default async function handler(req: NextRequest) {
         >
           <span
             style={{
+              padding: 5,
               fontSize: 48,
               fontWeight: 700,
               textAlign: "left",
