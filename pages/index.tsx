@@ -128,6 +128,8 @@ export default function Index() {
 
                 <option value="fair-biors">FAIR-BioRS</option>
 
+                <option value="fairhub">Fairhub</option>
+
                 <option value="custom">Custom</option>
               </select>
             </div>

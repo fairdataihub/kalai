@@ -52,6 +52,11 @@ export default async function handler(req: NextRequest) {
       imgBlur = "5px";
       backgroundImage = "https://kalai.fairdataihub.org/aireadiBackground.svg";
       break;
+    case "fairhub":
+      appText = "Fairhub";
+      imgBlur = "5px";
+      backgroundImage = "https://kalai.fairdataihub.org/fairhubBackground.svg";
+      break;
     case "fair-biors":
       appText = "";
       imgBlur = "5px";
