@@ -53,7 +53,7 @@ export default async function handler(req: NextRequest) {
       backgroundImage = "https://kalai.fairdataihub.org/aireadiBackground.svg";
       break;
     case "fairhub":
-      appText = "Fairhub";
+      appText = "";
       imgBlur = "5px";
       backgroundImage = "https://kalai.fairdataihub.org/fairhubBackground.svg";
       break;
@@ -84,6 +84,11 @@ export default async function handler(req: NextRequest) {
         twitter: false,
         social: "@ai-readi",
       };
+
+      if (app === "fairhub") {
+        org.name = "FAIRhub Data Repository";
+      }
+
       break;
     case "fair-biors":
       org = {
