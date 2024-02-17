@@ -126,9 +126,13 @@ export default function Index() {
 
                 <option value="ai-readi">AI-READI</option>
 
+                <option value="ai-readi-docs">AI-READI Documentation</option>
+
                 <option value="fair-biors">FAIR-BioRS</option>
 
                 <option value="fairhub">Fairhub</option>
+
+                <option value="fairhub-docs">Fairhub Documentation</option>
 
                 <option value="custom">Custom</option>
               </select>

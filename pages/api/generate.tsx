@@ -52,8 +52,18 @@ export default async function handler(req: NextRequest) {
       imgBlur = "5px";
       backgroundImage = "https://kalai.fairdataihub.org/aireadiBackground.svg";
       break;
+    case "ai-readi-docs":
+      appText = "Documentation";
+      imgBlur = "5px";
+      backgroundImage = "https://kalai.fairdataihub.org/aireadiBackground.svg";
+      break;
     case "fairhub":
       appText = "";
+      imgBlur = "5px";
+      backgroundImage = "https://kalai.fairdataihub.org/fairhubBackground.svg";
+      break;
+    case "fairhub-docs":
+      appText = "Documentation";
       imgBlur = "5px";
       backgroundImage = "https://kalai.fairdataihub.org/fairhubBackground.svg";
       break;
