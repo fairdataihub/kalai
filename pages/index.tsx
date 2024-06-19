@@ -134,6 +134,8 @@ export default function Index() {
 
                 <option value="fairhub-docs">Fairhub Documentation</option>
 
+                <option value="codefair">codefair</option>
+
                 <option value="custom">Custom</option>
               </select>
             </div>

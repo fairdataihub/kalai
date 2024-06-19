@@ -73,6 +73,11 @@ export default async function handler(req: NextRequest) {
       backgroundImage =
         "https://kalai.fairdataihub.org/fairbiorsBackground.svg";
       break;
+    case "codefair":
+      appText = "codefair";
+      imgBlur = "7px";
+      backgroundImage = "https://kalai.fairdataihub.org/codefairBackground.svg";
+      break;
     default:
       // Use what the user entered
       appText = app;
