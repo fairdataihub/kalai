@@ -134,6 +134,8 @@ export default function Index() {
 
                 <option value="fairhub-docs">Fairhub Documentation</option>
 
+                <option value="eyeact">EyeACT</option>
+
                 <option value="codefair">codefair</option>
 
                 <option value="custom">Custom</option>
@@ -169,6 +171,8 @@ export default function Index() {
                 <option value="fairdataihub">fairdataihub</option>
 
                 <option value="ai-readi">AI-READI</option>
+
+                <option value="eyeact">EyeACT</option>
 
                 <option value="fair-biors">FAIR-BioRS</option>
               </select>
