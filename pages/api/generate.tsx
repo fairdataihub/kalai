@@ -79,7 +79,7 @@ export default async function handler(req: NextRequest) {
       backgroundImage = "https://kalai.fairdataihub.org/codefairBackground.svg";
       break;
     case "eyeact":
-      appText = "EyeACT";
+      appText = "Eye ACT";
       imgBlur = "5px";
       backgroundImage = "https://kalai.fairdataihub.org/eyeactBackground.svg";
       break;
@@ -120,7 +120,7 @@ export default async function handler(req: NextRequest) {
       break;
     case "eyeact":
       org = {
-        name: "EyeACT",
+        name: "Eye ACT",
         github: true,
         twitter: false,
         social: "@EyeACT",
