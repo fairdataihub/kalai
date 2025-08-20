@@ -138,6 +138,8 @@ export default function Index() {
 
                 <option value="codefair">codefair</option>
 
+                <option value="dmp-chef">DMP Chef</option>
+
                 <option value="custom">Custom</option>
               </select>
             </div>
@@ -175,6 +177,8 @@ export default function Index() {
                 <option value="eyeact">Eye ACT</option>
 
                 <option value="fair-biors">FAIR-BioRS</option>
+
+                <option value="fairdataihub-cdl">fairdataihub and CDL</option>
               </select>
             </div>
 

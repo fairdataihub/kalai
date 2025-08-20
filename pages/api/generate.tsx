@@ -47,6 +47,11 @@ export default async function handler(req: NextRequest) {
       backgroundImage =
         "https://kalai.fairdataihub.org/fairdataihubBackground.svg";
       break;
+    case "dmp-chef":
+      appText = "DMP Chef";
+      // backgroundImage = devBackgroundImage;
+      backgroundImage = "https://kalai.fairdataihub.org/dmpchefBackground.svg";
+      break;
     case "ai-readi":
       appText = "";
       imgBlur = "5px";
@@ -124,6 +129,14 @@ export default async function handler(req: NextRequest) {
         github: true,
         twitter: false,
         social: "@EyeACT",
+      };
+      break;
+    case "fairdataihub-cdl":
+      org = {
+        name: "FAIR Data Innovations Hub & California Digital Library",
+        github: false,
+        twitter: false,
+        social: "",
       };
       break;
   }
@@ -252,22 +265,24 @@ export default async function handler(req: NextRequest) {
                 </svg>
               )}
 
-              <svg
-                viewBox="0 0 24 24"
-                width="30"
-                height="30"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                style={{
-                  marginLeft: 5,
-                  marginRight: 5,
-                }}
-              >
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
+              {org.github && (
+                <svg
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style={{
+                    marginLeft: 5,
+                    marginRight: 5,
+                  }}
+                >
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              )}
 
               <span
                 style={{
@@ -279,16 +294,18 @@ export default async function handler(req: NextRequest) {
                 }}
               ></span>
 
-              <span
-                style={{
-                  fontSize: 33,
-                  textAlign: "right",
-                  fontWeight: 500,
-                }}
-                className="social-text"
-              >
-                {org.social}
-              </span>
+              {org.social && (
+                <span
+                  style={{
+                    fontSize: 33,
+                    textAlign: "right",
+                    fontWeight: 500,
+                  }}
+                  className="social-text"
+                >
+                  {org.social}
+                </span>
+              )}
             </div>
 
             <span
