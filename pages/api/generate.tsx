@@ -88,6 +88,11 @@ export default async function handler(req: NextRequest) {
       imgBlur = "5px";
       backgroundImage = "https://kalai.fairdataihub.org/eyeactBackground.svg";
       break;
+    case "posters-science":
+      appText = "Posters.science";
+      backgroundImage =
+        "https://kalai.fairdataihub.org/postersBackground.svg";
+      break;
     default:
       // Use what the user entered
       appText = app;
