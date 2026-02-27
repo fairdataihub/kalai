@@ -158,6 +158,8 @@ export default function Index() {
 
                 <option value="dmp-chef">DMP Chef</option>
 
+                <option value="posters-science">Posters.science</option>
+
                 <option value="custom">Custom</option>
               </select>
             </div>
