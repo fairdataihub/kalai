@@ -90,7 +90,8 @@ export default async function handler(req: NextRequest) {
       break;
     case "posters-science":
       appText = "Posters.science";
-      imgBlur = "0px";
+      imgBlur = "0x";
+      // backgroundImage = devBackgroundImage;
       backgroundImage =
         "https://kalai.fairdataihub.org/postersBackground.svg";
       break;
