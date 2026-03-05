@@ -241,14 +241,3 @@ kalai/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-A special thank you to:
-
-- [Vercel](https://vercel.com/) for hosting and the OG Image Generation service
-- The open-source community for the tools and libraries that make this possible
-
-<a href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss" target="_blank">
-  <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"  width="auto"/>
-</a>

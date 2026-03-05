@@ -59,12 +59,12 @@ export default function Index() {
     // Send the form data to our API.
     const response = await fetch(
       `/api/generate/?` +
-        new URLSearchParams({
-          title: data.title,
-          description: data.description,
-          app: data.app,
-          org: data.org,
-        })
+      new URLSearchParams({
+        title: data.title,
+        description: data.description,
+        app: data.app,
+        org: data.org,
+      })
     );
 
     const apiResponseEnd = Date.now();
@@ -288,21 +288,6 @@ export default function Index() {
             <p>All rights reserved.</p>
           </div>
 
-          <div className="mt-0 flex flex-row items-center justify-center">
-            <a
-              href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
-              target="_blank"
-              rel="noreferrer"
-              className="mx-0 md:mx-4"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-                alt="Powered by Vercel"
-                className="w-40"
-              />
-            </a>
-          </div>
         </div>
       </footer>
     </div>
